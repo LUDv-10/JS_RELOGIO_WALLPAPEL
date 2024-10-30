@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: image-set(url(IMAGENS/20201225_121814.jpg));
+  background-size: cover;
+}
+
+#fundo {
+  overflow: hidden;
+  position: absolute;
+  top: 18%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 500px 400px;
+}
+
+
+.Dia p {
+  position: absolute;
+  top: 88%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+  width: 261px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Data p {
+  position: absolute;
+  top: 91%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  text-shadow: 0vw 0vw 2vw;
+}
+.Horario p {
+  position: absolute;
+  top: 38%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Hora {
+  display: flex;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Relogio {
+  display: flex-direction;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 10px;
+}
+
+.Relogio span {
+  font-size: 250px;
+  display: flex;
+  height: 217px;
+  color: rgb(255, 255, 255);
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0vw 0vw 2vw;
+}
+
+.Relogio span:not(:last-child)::after {
+  content: "";
+  margin-bottom: 20px;
+  color: rgba(43, 43, 43, 0.603);
+}
